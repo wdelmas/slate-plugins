@@ -80,4 +80,6 @@ export interface BlockquoteElementStyleProps {
   // Insert BlockquoteElement style props below
 }
 
+export interface BlockQuoteOnKeyDownOptions
+  extends BlockquotePluginOptions<'type'> {}
 export interface BlockQuoteOptions extends BlockquotePluginOptions<'type'> {}

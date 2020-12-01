@@ -18,7 +18,7 @@ import {
   SlatePlugin,
   SoftBreakPlugin,
   TodoListPlugin,
-  ToolbarElement,
+  ToolbarBlockquote,
   ToolbarList,
   withAutoformat,
   withBlockquote,
@@ -31,7 +31,6 @@ import { Slate, withReact } from 'slate-react';
 import {
   headingTypes,
   initialValueList,
-  initialValueBlockquote,
   options,
   optionsResetBlockTypes,
 } from '../config/initialValues';
@@ -121,8 +120,8 @@ export const Example = () => {
         }}
       >
         <HeadingToolbar>
-          <ToolbarElement
-            type={options.blockquote.type}
+        <ToolbarBlockquote
+            {...options}
             icon={<FormatQuote />}
           />
           <ToolbarList

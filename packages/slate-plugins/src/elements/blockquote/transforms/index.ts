@@ -1,1 +1,2 @@
-export * from './toggleBlockquote';
+export * from './addBlockquote';
+export * from './removeBlockquote';

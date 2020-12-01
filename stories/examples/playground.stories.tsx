@@ -73,6 +73,7 @@ import {
   UnderlinePlugin,
   useMention,
   withAutoformat,
+  withBlockquote,
   withDeserializeHTML,
   withImageUpload,
   withInlineVoid,
@@ -207,6 +208,7 @@ export const Plugins = () => {
     withTable(options),
     withLink(),
     withList(options),
+    withBlockquote(options),
     withDeserializeHTML({ plugins }),
     withMarks(),
     withImageUpload(),
@@ -250,7 +252,6 @@ export const Plugins = () => {
         value={value}
         onChange={(newValue) => {
           setValue(newValue as SlateDocument);
-
           onChangeMention(editor);
         }}
       >
